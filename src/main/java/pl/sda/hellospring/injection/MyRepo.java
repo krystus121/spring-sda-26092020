@@ -1,6 +1,5 @@
 package pl.sda.hellospring.injection;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +8,6 @@ import org.springframework.stereotype.Repository;
 public class MyRepo {
 
     public MyRepo() {
-        log.info("My repo");
+        log.info("MyRepo");
     }
 }
