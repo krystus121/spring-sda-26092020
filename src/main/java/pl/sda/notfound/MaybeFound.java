@@ -9,5 +9,6 @@ public class MaybeFound {
 
     public MaybeFound() {
         log.info("to be or not to be??");
+        log.info("to be or not to be??");
     }
 }
