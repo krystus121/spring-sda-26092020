@@ -4,10 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -18,7 +15,15 @@ public class Car {
     @Id
     @GeneratedValue
     private Long id;
+
+    @Column(name = "BRAND")
     private String brand;
+
+    @Column(name = "MODEL")
     private String model;
+
+  //  @Transient // nie twórz kolumny dla pola
+    @Column(name = "colour")
     private String color;
+
 }
