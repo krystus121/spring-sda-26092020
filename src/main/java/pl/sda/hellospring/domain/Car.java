@@ -13,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Car {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "BRAND")
